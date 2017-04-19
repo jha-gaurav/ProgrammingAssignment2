@@ -1,9 +1,10 @@
 library(MASS)
 
-## Put comments here that give an overall description of what your
-## functions do
+## The function makeCacheMatrix creates a special invertible matrix and calculates its inverse and retains
+## the inverse in the cache.
 
-## Write a short comment describing this function
+
+
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -22,7 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The function cacheSolve uses the list of functions defined in makeCacheMatrix to retrieve the matrix inverse, either 
+## from the cached value or calculating it afresh.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
